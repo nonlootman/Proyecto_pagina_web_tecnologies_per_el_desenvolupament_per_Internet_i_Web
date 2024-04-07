@@ -1,0 +1,157 @@
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- SECCIÓ DE DADES USUARI +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+#section_dades_usuari {
+    position: relative;
+    margin-inline: 7%;
+    
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0.1%;
+
+    background-color: white;
+}
+
+#section_dades_usuari div{
+    margin-top: 5px;
+    padding-left: 2.5%;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- SECCIÓ DE PRODUCTES +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+#section_productes {
+    position: relative;
+    margin-inline: 7%;
+    
+    padding-top: 0.1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0.1%;
+
+    background-color: white;
+}
+
+#flex_productes{
+    display: flex;
+    flex-direction: column;
+}
+.flex_producte{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_producte div{
+    min-width: 20%;
+    width: fit-content;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+    text-align: left;
+    font-size: 1em;
+}
+
+.flex_producte .nom_producte{
+    width: 40%;
+    
+}
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- SECCIÓ DE TOTAL +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+#section_total {
+    position: relative;
+    margin-inline: 7%;
+    
+    padding-top: 0.1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0.1%;
+
+    background-color: white;
+}
+
+#total_flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#total_text{
+    width: 100%;
+    
+    text-align: right;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+#total_preu{
+    width: 100%;  
+
+    text-align: right;
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- SECCIÓ DE PAGAMENT +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+#section_pagament {
+    position: relative;
+    margin-inline: 7%;
+
+    padding-top: 0.1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    
+    background-color: white;
+}
+
+#botons_pagament{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#boto_cancelar_compra{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    width: 25%;
+    height: 50px;
+
+    background-color: red;
+    border-radius: 10px;
+    
+    text-align: center;
+    font-weight: bold;
+}
+#boto_cancelar_compra a, #boto_cancelar_compra a div{
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+
+    color: white;
+    text-decoration: none;    
+}
+
+#boto_check_out{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 15px;    
+    width: 50%;
+    height: 50px;
+
+    background-color:  rgb(89, 194, 107);;
+    border-radius: 10px;
+    
+    text-align: center;
+    color: white;
+    text-decoration: none;    
+    font-weight: bold;
+}
+
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- SECCIÓ D'INICI DE SESSIÓ  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+#sessio_no_iniciada{
+    position: relative;
+    margin-inline: 7%;
+    padding: 2%;
+    background-color: white;
+
+    text-align: center;
+}

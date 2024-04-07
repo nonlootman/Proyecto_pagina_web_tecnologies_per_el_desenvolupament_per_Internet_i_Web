@@ -1,0 +1,75 @@
+/*PERSONAL DATA FLEX*/
+#dades_personals_flex{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+#imatge_perfil img{
+    
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+}
+
+#dades_personals {
+    padding-top: 10px;
+}
+#dades_personals p {
+    padding-left: 20px;
+}
+
+#dades_personals h3{
+    padding-top: 15px;
+}
+.link{
+    color: rgb(66, 161, 82);
+    text-decoration: none;
+}
+
+/*LOG OUT BUTTON*/
+#button_log_out {
+    position: relative;
+    text-align: justify;
+    background-color: transparent;
+    display: flex;
+}
+#button_log_out  p{
+    position: relative;
+    height: inherit;
+    padding-top: 15px;/*15 is the magic number*/
+    justify-content: center;
+    text-align: center;
+    color: red;
+}
+
+/*HISTORIAL COMPRES*/
+#compres_passades_grid{
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#compres_passades_index, .compra{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    text-align: center;
+    justify-content: center;
+}
+#compres_passades_index div, .compra div{
+    width: 20%;
+}
+
+#compres_passades_index{
+    font-weight: bold;
+}
+
+

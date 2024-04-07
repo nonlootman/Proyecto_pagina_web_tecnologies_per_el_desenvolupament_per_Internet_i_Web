@@ -1,0 +1,97 @@
+#BackID{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/Imatges_background/Background_purple.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+
+    z-index: -1;
+}
+#Bck{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/Imatges_background/Background_login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+
+    z-index: -1;
+}
+
+.box{
+    color: white;
+    background-color: rgb(177, 142, 209);
+    font-size: 18px;
+    font-weight: 400;
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 20px;
+    border: 4px solid;
+    height: 100%;
+    
+}
+
+#formID.box{
+    font-style: Helvetica;
+
+}
+#formula{
+    font-style: Helvetica;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nom{
+    grid-area: nom;
+}
+#correu{
+    grid-area: correu;
+}
+#contrasenya{
+    grid-area: contrasenya;
+}
+#contra{
+    grid-area: contra;
+}
+#registre{
+    grid-area: registre;
+}
+#noE{
+    grid-area: non;
+}
+#cO{
+    grid-area: cOc;
+}
+
+@media (max-width: 600px) {
+    #formID{
+        grid-template-areas:
+        'nom'
+        'correu'
+        'contrasenya'
+        'contra'
+        'registre';
+    }    
+    #formID > section{
+        text-align: left;
+    }
+    #formula{
+        grid-template-areas: 
+        'non'
+        'cOc';
+    }
+    #formula > section{
+        text-align: left;
+    }
+}

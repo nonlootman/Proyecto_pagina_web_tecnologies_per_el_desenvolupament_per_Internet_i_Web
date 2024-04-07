@@ -1,0 +1,125 @@
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ PANTALLA PRODUCTES +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+.seccio_detall_producte {
+    position: relative;
+    top: 0;  /*depen de seccio_filtres*/
+    margin-inline: 7%;
+    padding: 2%;
+    background-color: white;
+}
+
+/*------------------------------------------- TAULA PRODUCTE*/
+.taula_producte{
+    display: grid;
+    padding: 5px;
+    row-gap: -10px;
+    column-gap: 40px;
+    grid-template-areas: 
+        'Imatge NomP'
+        'Imatge Preu '
+        'Imatge Descr '
+        'Imatge Opcions_compra';
+}
+#Imatge{ 
+    grid-area: Imatge;
+
+    position: relative;
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    align-items: center;
+    
+}
+#Imatge img{
+    position: relative;
+    width: 100%;
+    max-width: inherit;
+    border-radius: 20px;
+}
+
+#NomP{ grid-area: NomP; max-width: 1000px; font-size: xx-large; height: fit-content;}
+#Preu{ grid-area: Preu; max-width: 1000px; padding-left: 10px; font-size: x-large; }
+#Descr{ grid-area: Descr; }
+
+/* -------------------------------------------- TAULA OPCIONS COMPRA*/
+#Opcions_compra {
+    grid-area: Opcions_compra;
+    
+    max-width: 1000px;
+    padding: 20px;
+
+    border-radius: 20px;
+    background-color: rgb(224, 245, 227);
+    border-color: black;
+    
+    display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-areas: 
+        'Preu_total Unitats Direccio'
+        'Compra Compra AddCart';
+}
+
+#Preu_total{ grid-area: Preu_total; }
+#selector_unitats{ height: fit-content; width: fit-content; max-width: 50px; }
+#selector_unitats input{ max-width: inherit; }
+#Direccio{ grid-area: Direccio; max-width: 300px; font-size: small;}
+
+#Unitats{ 
+    grid-area: Unitats; 
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.unitat_mes_menys{
+    height: 20px;
+    width: 20px;
+
+    background-color: rgb(89, 194, 107);
+    border-radius: 50%;
+
+    font-size: 20px;
+    text-align: center;
+    color: white;
+
+}
+
+#Compra_producte{ 
+    grid-area: Compra; 
+    
+    max-width: 90%; 
+    height: 40px;
+    padding-top: 10px;;
+
+    background-color: rgb(89, 194, 107);
+    
+    border-radius: 15px;
+    text-align: center;
+}
+#Compra_producte a{ 
+    text-decoration: none; 
+    color: white;
+    font-weight: bold;
+}
+
+#Add_to_Cart{ 
+    grid-area: AddCart; 
+    max-width: 90%; 
+    height: 40px;
+    padding-top: 10px;;
+    
+    background-color:  white;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+    #NomP{ font-size: x-large; }
+    #Preu{ font-size: x-large; }
+    #Descr{ font-size: small; }
+    #Direccio{  font-size: smaller;}
+    #Compra_producte, #Add_to_Cart{ height: 40px; }
+}

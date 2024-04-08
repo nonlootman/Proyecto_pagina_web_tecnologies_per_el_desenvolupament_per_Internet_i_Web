@@ -1,3 +1,3 @@
 <?php
-  $conn = pg_connect("host=localhost dbname=tdiw-g7 user=tdiw-g7 password=_pKgzFUP");
+  $conn = pg_connect("host=ppppp dbname=xxxxx user=xxxxxx password=xxxxx");
 ?>
